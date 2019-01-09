@@ -1,17 +1,1012 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>index.html</title>
-	
-    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
-    <meta http-equiv="description" content="this is my page">
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    
-    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>甲醇电商首页</title>
+<!---180928首页改版新增css--->
+<link href="css/index.css" rel="stylesheet" type="text/css">
+<!---181106首页改版第三版新增css--->
+<link href="css/index_jchg2.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<!---首页成交记录 滚动--->
+<script type="text/javascript" src="js/scroll.js"></script>
+</head>
 
-  </head>
+<body>
+<!---顶部 开始---->
+<div class="top">
+  <div class="wrap"> <span class="l">嗨，您好，您还未登录！&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" class="red">登录</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">免费注册</a></span>
+    <div class="r">
+      <div class="menu">
+        <div class="menu-hd"> <a  href="#">我的消息</a><b></b> </div>
+        <div class="menu-bd"> <a href="#">我的协商</a> </div>
+      </div>
+      <div class="menu">
+        <div class="menu-hd"> <a  href="#">个人中心</a><b></b> </div>
+        <div class="menu-bd"> <a href="#">我的收藏</a> <a href="#">完善资料</a> </div>
+      </div>
+      <div class="menu">
+        <div class="menu-hd"> <a href="#">客服专区</a><b></b> </div>
+        <div class="menu-bd"> <a href="#">帮助中心</a> <a href="#">在线客服</a> </div>
+      </div>
+      &nbsp;&nbsp;<span class="grey">|</span>&nbsp;&nbsp;客服电话：<span
+				class="red">0315-3388090</span> </div>
+  </div>
+</div>
+<!---顶部 结束----> 
+
+<!---mhg-header 开始---->
+<div class="mhg-header">
+  <div class="wrap clearfix">
+    <div class="mhg-logo"><a href="#"><img src="img/jchg-logo.png" width="300" height="90" /></a></div>
+    <div class="mhg-search">
+      <div class="search-con">
+        <div class="mhg-s-tab clearfix" id="mhg-s-tab">
+          <h2 class="over">产品</h2>
+          <h2 class="out">商铺</h2>
+          <h2 class="out">资讯</h2>
+        </div>
+        <div class="mhg-s-con clearfix" id="mhg-s-con"> <em class="clearfix">
+          <input name="" type="text" class="mhg-search-t" placeholder="请输入产品名称/规格" />
+          <input name="" type="button" value="搜索" class="mhg-search-b" />
+          </em><em class="clearfix">
+          <input name="" type="text" class="mhg-search-t" placeholder="请输入产品名称/规格" />
+          <input name="" type="button" value="搜索" class="mhg-search-b" />
+          </em> <em class="clearfix">
+          <input name="" type="text" class="mhg-search-t" placeholder="请输入产品名称/规格" />
+          <input name="" type="button" value="搜索" class="mhg-search-b" />
+          </em> </div>
+        <script>var Tagssearch=document.getElementById('mhg-s-tab').getElementsByTagName('h2');var TagsCntsearch=document.getElementById('mhg-s-con').getElementsByTagName('em');var lensearch=Tagssearch.length; var flagsearch=0;for(i=0;i<lensearch;i++){Tagssearch[i].value = i;Tagssearch[i].onmouseover=function(){changeNavsearch(this.value)};TagsCntsearch[i].className='undis';}Tagssearch[flagsearch].className='over';TagsCntsearch[flagsearch].className='dis';function changeNavsearch(v){Tagssearch[flagsearch].className='out';TagsCntsearch[flagsearch].className='undis';flagsearch=v;Tagssearch[v].className='over';TagsCntsearch[v].className='dis';}
+      </script> 
+      </div>
+    </div>
+    <div class="btn-group"><a href="#" class="b-g-l">发布产品</a><a href="#" class="b-g-r">发布采购</a></div>
+  </div>
+</div>
+
+<!---mhg-header 结束----> 
+<!---mhg-nav 开始---->
+<div class="mhg-nav wrap">
+  <ul class="list clearfix">
+    <li class="choose"><a href="#">首页</a></li>
+    <li><a href="#">商铺</a></li>
+    <li><a href="#">交易<span class="nav-icon"></span></a>
+      <ul class="list2">
+        <li><a href="#">采购</a></li>
+        <li><a href="#">销售</a></li>
+        <li><a href="#">挂牌</a></li>
+      </ul>
+    </li>
+    <li><a href="#">物流</a></li>
+    <li><a href="#">资讯</a></li>
+    <li><a href="#">金融</a></li>
+  </ul>
+</div>
+<!---mhg-nav 结束----> 
+<!---首页正文 开始---->
+<div class="mhg-grey"> 
   
-  <body>
-    This is my HTML page. <br>
-  </body>
+  <!---banner&登录 开始---->
+  <div class="mhg-line wrap clearfix">
+    <div class="mhg-banner mhg-box">
+      <div class="flexslider">
+        <ul class="slides">
+          <li><a href="#"><img src="img/mhg-banner01.jpg" width="928" height="300" /></a></li>
+          <li><a href="#"><img src="img/mhg-banner02.jpg" width="928" height="300" /></a></li>
+          <li><a href="#"><img src="img/mhg-banner03.jpg" width="928" height="300" /></a></li>
+          <li><a href="#"><img src="img/mhg-banner04.jpg" width="928" height="300" /></a></li>
+        </ul>
+      </div>
+      <script type="text/javascript" src="js/jquery.min.js"></script> 
+      <script type="text/javascript" src="js/jquery.flexslider-min.js"></script> 
+      <script>
+$(function(){
+	$('.flexslider').flexslider({
+		directionNav: true,
+		pauseOnAction: false
+	});
+});
+</script> 
+    </div>
+    <div class="mhg-login mhg-box">
+      <div class="login_index" id="login_index">
+        <p class="titlogin">会员登录</p>
+        <form class="form" name="loginform" id="loginform">
+          <input type="hidden" name="redurl" id="redurl" value="">
+          <p>
+            <input id="username" class="userlogin" name="username" placeholder="请输入手机号" type="text" onfocus="if(this.placeholder==&quot;请输入手机号&quot;){this.placeholder=&quot;&quot;};" onblur="if(this.placeholder==&quot;&quot;){this.placeholder=&quot;请输入手机号&quot;};">
+          </p>
+          <p>
+            <input id="password" type="password" class="mimalogin" name="password" placeholder="登录密码" onfocus="if(this.placeholder==defaultValue) {this.placeholder='';this.type='password'}" onblur="if(!placeholder) {placeholder=defaultValue; this.type='text';}">
+          </p>
+          <p class="yz">
+            <input name="captcha" id="captcha" type="text" class="yzlogin" placeholder="验证码" onfocus="if(this.placeholder==&quot;验证码&quot;){this.placeholder=&quot;&quot;};" onblur="if(this.placeholder==&quot;&quot;){this.placeholder=&quot;验证码&quot;};" onkeypress="if (event.keyCode == 13) {document.getElementById('loginBtn').click(); return false; }">
+            <span style="position:absolute; top:0px;"><img id="auther" src="/captcha.servlet" width="110" height="38" onclick="this.src='/captcha.servlet?d='+new Date()*1"></span> </p>
+          <p>
+            <input type="button" id="loginBtn" onclick="login();" value="立即登录" class="btnlogin">
+          </p>
+          <p><a href="/retrievePass.jspx" class="forget">忘记密码？</a><a href="/register.jspx" class="zhuce">免费注册</a></p>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!---banner&登录 结束----> 
+  <!---企业广告&定制化销售 开始---->
+  <div class="mhg-line wrap clearfix">
+    <div class="mhg-qygg mhg-box">
+      <ul class="clearfix">
+        <li><a href="#"><img src="img/mhg-qygg-img01.jpg" width="180" height="200" /></a></li>
+        <li><a href="#"><img src="img/mhg-qygg-img02.jpg" width="180" height="200" /></a></li>
+        <li><a href="#"><img src="img/mhg-qygg-img03.jpg" width="180" height="200" /></a></li>
+        <li><a href="#"><img src="img/mhg-qygg-img04.jpg" width="180" height="200" /></a></li>
+        <li><a href="#"><img src="img/mhg-qygg-img05.jpg" width="180" height="200" /></a></li>
+      </ul>
+    </div>
+    <div class="mhg-dzh-xs mhg-box">
+      <div class="mhg-tit">定制化销售</div>
+      <ul class="list">
+        <li class="clearfix"><span>10-11</span><a href="#">山西阿房有限公司甲醇采购公告山西阿房有限公司甲醇采购公告山西阿房有限公司甲醇采购公告</a></li>
+        <li class="clearfix"><span>10-11</span><a href="#">山西阿房有限公司甲醇采购公告山西阿房有限公司甲醇采购公告山西阿房有限公司甲醇采购公告</a></li>
+        <li class="clearfix"><span>10-11</span><a href="#">山西阿房有限公司甲醇采购公告山西阿房有限公司甲醇采购公告山西阿房有限公司甲醇采购公告</a></li>
+        <li class="clearfix"><span>10-11</span><a href="#">山西阿房有限公司甲醇采购公告山西阿房有限公司甲醇采购公告山西阿房有限公司甲醇采购公告</a></li>
+        <li class="clearfix"><span>10-11</span><a href="#">山西阿房有限公司甲醇采购公告山西阿房有限公司甲醇采购公告山西阿房有限公司甲醇采购公告</a></li>
+        <li class="clearfix"><span>10-11</span><a href="#">山西阿房有限公司甲醇采购公告山西阿房有限公司甲醇采购公告山西阿房有限公司甲醇采购公告</a></li>
+      </ul>
+    </div>
+  </div>
+  <!---企业广告&定制化销售 结束----> 
+  <!---采购信息 开始---->
+  <div class="mhg-line wrap clearfix">
+    <div class="mhg-cgxx">
+      <div class="mhg-tit">采购信息<a href="#">更多</a></div>
+      <div class="cgxx-con clearfix">
+        <ul class="cg-list clearfix">
+          <li>
+            <div class="img"><a href="#">
+              <div class="djs">距结束：<span>3</span>天<span>17</span>小时</div>
+              <img src="img/mhg-cgxx-list-img.jpg" width="200" height="200" /></a></div>
+            <div class="con clearfix">
+              <h1><span>[质量指标]</span>色度(Hazen):≤5;密度(ρ20:0.789-色度(Hazen):≤5;密度(ρ20:0.789-色度(Hazen):≤5;密度(ρ20:0.789-</h1>
+              <h2>溪山甲醇交易有限公司</h2>
+              <p>起订量：1000吨</p>
+              <a href="#" class="cg-btn1">立即参与</a> </div>
+          </li>
+          <li>
+            <div class="img"><a href="#">
+              <div class="djs">距结束：<span>3</span>天<span>17</span>小时</div>
+              <img src="img/mhg-cgxx-list-img.jpg" width="200" height="200" /></a></div>
+            <div class="con clearfix">
+              <h1><span>[质量指标]</span>色度(Hazen):≤5;密度(ρ20:0.789-色度(Hazen):≤5;密度(ρ20:0.789-色度(Hazen):≤5;密度(ρ20:0.789-</h1>
+              <h2>溪山甲醇交易有限公司</h2>
+              <p>起订量：1000吨</p>
+              <a href="#" class="cg-btn1">立即参与</a> </div>
+          </li>
+          <li>
+            <div class="img"><a href="#">
+              <div class="djs">距结束：<span>3</span>天<span>17</span>小时</div>
+              <img src="img/mhg-cgxx-list-img.jpg" width="200" height="200" /></a></div>
+            <div class="con clearfix">
+              <h1><span>[质量指标]</span>色度(Hazen):≤5;密度(ρ20:0.789-色度(Hazen):≤5;密度(ρ20:0.789-色度(Hazen):≤5;密度(ρ20:0.789-</h1>
+              <h2>溪山甲醇交易有限公司</h2>
+              <p>起订量：1000吨</p>
+              <a href="#" class="cg-btn1">立即参与</a> </div>
+          </li>
+          <li>
+            <div class="img"><a href="#">
+              <div class="djs">距结束：<span>3</span>天<span>17</span>小时</div>
+              <img src="img/mhg-cgxx-list-img.jpg" width="200" height="200" /></a></div>
+            <div class="con clearfix">
+              <h1><span>[质量指标]</span>色度(Hazen):≤5;密度(ρ20:0.789-色度(Hazen):≤5;密度(ρ20:0.789-色度(Hazen):≤5;密度(ρ20:0.789-</h1>
+              <h2>溪山甲醇交易有限公司</h2>
+              <p>起订量：1000吨</p>
+              <a href="#" class="cg-btn2">挂单结束</a> </div>
+          </li>
+          <li>
+            <div class="img"><a href="#">
+              <div class="djs">距结束：<span>3</span>天<span>17</span>小时</div>
+              <img src="img/mhg-cgxx-list-img.jpg" width="200" height="200" /></a></div>
+            <div class="con clearfix">
+              <h1><span>[质量指标]</span>色度(Hazen):≤5;密度(ρ20:0.789-色度(Hazen):≤5;密度(ρ20:0.789-色度(Hazen):≤5;密度(ρ20:0.789-</h1>
+              <h2>溪山甲醇交易有限公司</h2>
+              <p>起订量：1000吨</p>
+              <a href="#" class="cg-btn1">立即参与</a> </div>
+          </li>
+        </ul>
+        <div class="cgxx-l">
+          <div class="mhg-scroll-tit">今日采购</div>
+          <div class="mhg-scroll-con">
+            <div class="scroll-tab clearfix" id="scroll-tab">
+              <h2 class="over">全部</h2>
+              <h2 class="out">甲醇</h2>
+            </div>
+            <div class="scroll-con clearfix" id="scroll-con"> <em class="clearfix">
+              <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <th scope="col" width="18%">采购单位</th>
+                  <th scope="col" width="10%">产品名称</th>
+                  <th scope="col" width="14%">品质</th>
+                  <th scope="col" width="16%">交货地</th>
+                  <th scope="col" width="14%">起订量</th>
+                  <th scope="col" width="14%">意向价格</th>
+                  <th scope="col" width="14%">参与</th>
+                </tr>
+              </table>
+              <div class="mhg_gy_cont" id="mhg_gy_cont1">
+                <div id="mhg_gy_cont2">
+                  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td width="18%">溪山甲醇交易有限公司</td>
+                      <td width="10%">甲醇</td>
+                      <td width="14%">国标、优等品</td>
+                      <td width="16%">鄂尔多斯市  内蒙古...</td>
+                      <td width="14%">1000吨</td>
+                      <td width="14%"><span style="color:#ff6600;">¥300</span></td>
+                      <td width="14%"><a href="#" class="cy-btn">参与</a></td>
+                    </tr>
+                    <tr>
+                      <td width="18%">溪山甲醇交易有限公司</td>
+                      <td width="10%">甲醇</td>
+                      <td width="14%">国标、优等品</td>
+                      <td width="16%">鄂尔多斯市  内蒙古...</td>
+                      <td width="14%">1000吨</td>
+                      <td width="14%"><span style="color:#ff6600;">¥300</span></td>
+                      <td width="14%"><a href="#" class="cy-btn">参与</a></td>
+                    </tr>
+                    <tr>
+                      <td width="18%">溪山甲醇交易有限公司</td>
+                      <td width="10%">甲醇</td>
+                      <td width="14%">国标、优等品</td>
+                      <td width="16%">鄂尔多斯市  内蒙古...</td>
+                      <td width="14%">1000吨</td>
+                      <td width="14%"><span style="color:#ff6600;">¥300</span></td>
+                      <td width="14%"><a href="#" class="cy-btn">参与</a></td>
+                    </tr>
+                    <tr>
+                      <td width="18%">溪山甲醇交易有限公司</td>
+                      <td width="10%">甲醇</td>
+                      <td width="14%">国标、优等品</td>
+                      <td width="16%">鄂尔多斯市  内蒙古...</td>
+                      <td width="14%">1000吨</td>
+                      <td width="14%"><span style="color:#ff6600;">¥300</span></td>
+                      <td width="14%"><a href="#" class="cy-btn">参与</a></td>
+                    </tr>
+                    <tr>
+                      <td width="18%">溪山甲醇交易有限公司</td>
+                      <td width="10%">甲醇</td>
+                      <td width="14%">国标、优等品</td>
+                      <td width="16%">鄂尔多斯市  内蒙古...</td>
+                      <td width="14%">1000吨</td>
+                      <td width="14%"><span style="color:#ff6600;">¥300</span></td>
+                      <td width="14%"><a href="#" class="cy-btn">参与</a></td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+              <script type="text/javascript">
+			  
+			  function scoll(scrollElem){
+				  var stopscroll1 = false;
+				  var marqueesHeight = scrollElem.style.height;
+				  scrollElem.onmouseover = new Function('stopscroll1 = true');
+				  scrollElem.onmouseout = new Function('stopscroll1 = false');
+				  var preTop = 0;
+				  var currentTop = 0;
+				  var stoptime = 0;
+				  var leftElem = document.getElementById("mhg_gy_cont2"); 
+				  scrollElem.appendChild(leftElem.cloneNode(true));
+				   
+				  function init_srolltext1(){
+					  scrollElem.scrollTop = 0;
+					  setInterval(scrollUp, 50);//的面的这个参数25, 是确定滚动速度的, 数值越小, 速度越快
+				  }
+				  function scrollUp(){
+					  if(stopscroll1) return;
+					  currentTop += 2; //设为1, 可以实现间歇式的滚动; 设为2, 则是连续滚动
+					  if(currentTop == 84) {
+						 stoptime += 1;
+						 currentTop -= 1;
+						 if(stoptime == 210) {
+						  currentTop = 0;
+						  stoptime = 0;
+						 }
+					  }else{
+						 preTop = scrollElem.scrollTop;
+						 scrollElem.scrollTop += 1;
+						 if(preTop == scrollElem.scrollTop){
+						  scrollElem.scrollTop = 0;
+						  scrollElem.scrollTop += 1;
+						 }
+					  }
+				  }
+				  init_srolltext1();
+			  }
+			  var scrollElem1 = document.getElementById("mhg_gy_cont1");
+			  scoll(scrollElem1);
+			  
+			  </script> 
+              </em> <em class="clearfix">
+              <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <th scope="col" width="18%">采购单位</th>
+                  <th scope="col" width="10%">产品名称</th>
+                  <th scope="col" width="14%">品质</th>
+                  <th scope="col" width="16%">交货地</th>
+                  <th scope="col" width="14%">起订量</th>
+                  <th scope="col" width="14%">意向价格</th>
+                  <th scope="col" width="14%">参与</th>
+                </tr>
+              </table>
+              <div class="mhg_gy_cont" id="mhg_gy_cont3">
+                <div id="mhg_gy_cont4">
+                  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td width="18%">XXXX甲醇交易有限公司</td>
+                      <td width="10%">甲醇</td>
+                      <td width="14%">国标、优等品</td>
+                      <td width="16%">鄂尔多斯市  内蒙古...</td>
+                      <td width="14%">1000吨</td>
+                      <td width="14%"><span style="color:#ff6600;">¥300</span></td>
+                      <td width="14%"><a href="#" class="cy-btn">参与</a></td>
+                    </tr>
+                    <tr>
+                      <td width="18%">XXXX甲醇交易有限公司</td>
+                      <td width="10%">甲醇</td>
+                      <td width="14%">国标、优等品</td>
+                      <td width="16%">鄂尔多斯市  内蒙古...</td>
+                      <td width="14%">1000吨</td>
+                      <td width="14%"><span style="color:#ff6600;">¥300</span></td>
+                      <td width="14%"><a href="#" class="cy-btn">参与</a></td>
+                    </tr>
+                    <tr>
+                      <td width="18%">XXXX甲醇交易有限公司</td>
+                      <td width="10%">甲醇</td>
+                      <td width="14%">国标、优等品</td>
+                      <td width="16%">鄂尔多斯市  内蒙古...</td>
+                      <td width="14%">1000吨</td>
+                      <td width="14%"><span style="color:#ff6600;">¥300</span></td>
+                      <td width="14%"><a href="#" class="cy-btn">参与</a></td>
+                    </tr>
+                    <tr>
+                      <td width="18%">XXXX甲醇交易有限公司</td>
+                      <td width="10%">甲醇</td>
+                      <td width="14%">国标、优等品</td>
+                      <td width="16%">鄂尔多斯市  内蒙古...</td>
+                      <td width="14%">1000吨</td>
+                      <td width="14%"><span style="color:#ff6600;">¥300</span></td>
+                      <td width="14%"><a href="#" class="cy-btn">参与</a></td>
+                    </tr>
+                    <tr>
+                      <td width="18%">XXXX甲醇交易有限公司</td>
+                      <td width="10%">甲醇</td>
+                      <td width="14%">国标、优等品</td>
+                      <td width="16%">鄂尔多斯市  内蒙古...</td>
+                      <td width="14%">1000吨</td>
+                      <td width="14%"><span style="color:#ff6600;">¥300</span></td>
+                      <td width="14%"><a href="#" class="cy-btn">参与</a></td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+              <script type="text/javascript">
+			  
+			  function scoll(scrollElem){
+				  var stopscroll2 = false;
+				  var marqueesHeight = scrollElem.style.height;
+				  scrollElem.onmouseover = new Function('stopscroll2 = true');
+				  scrollElem.onmouseout = new Function('stopscroll2 = false');
+				  var preTop = 0;
+				  var currentTop = 0;
+				  var stoptime = 0;
+				  var leftElem = document.getElementById("mhg_gy_cont4"); 
+				  scrollElem.appendChild(leftElem.cloneNode(true));
+				   
+				  function init_srolltext2(){
+					  scrollElem.scrollTop = 0;
+					  setInterval(scrollUp, 50);//的面的这个参数25, 是确定滚动速度的, 数值越小, 速度越快
+				  }
+				  function scrollUp(){
+					  if(stopscroll2) return;
+					  currentTop += 2; //设为1, 可以实现间歇式的滚动; 设为2, 则是连续滚动
+					  if(currentTop == 84) {
+						 stoptime += 1;
+						 currentTop -= 1;
+						 if(stoptime == 210) {
+						  currentTop = 0;
+						  stoptime = 0;
+						 }
+					  }else{
+						 preTop = scrollElem.scrollTop;
+						 scrollElem.scrollTop += 1;
+						 if(preTop == scrollElem.scrollTop){
+						  scrollElem.scrollTop = 0;
+						  scrollElem.scrollTop += 1;
+						 }
+					  }
+				  }
+				  init_srolltext2();
+			  }
+			  var scrollElem2 = document.getElementById("mhg_gy_cont3");
+			  scoll(scrollElem2);
+			  
+			  </script> 
+              </em> </div>
+            <script>var Tagsscroll=document.getElementById('scroll-tab').getElementsByTagName('h2');var TagsCntscroll=document.getElementById('scroll-con').getElementsByTagName('em');var lenscroll=Tagsscroll.length; var flagscroll=0;for(i=0;i<lenscroll;i++){Tagsscroll[i].value = i;Tagsscroll[i].onmouseover=function(){changeNavscroll(this.value)};TagsCntscroll[i].className='undis';}Tagsscroll[flagscroll].className='over';TagsCntscroll[flagscroll].className='dis';function changeNavscroll(v){Tagsscroll[flagscroll].className='out';TagsCntscroll[flagscroll].className='undis';flagscroll=v;Tagsscroll[v].className='over';TagsCntscroll[v].className='dis';}
+      </script> 
+          </div>
+        </div>
+        <div class="cgxx-r">
+          <div class="mhg-tit">定制化采购</div>
+          <div class="mhg-dzh-cg">
+            <ul class="list">
+              <li><span>10-11</span><a href="#">山西阿房有限公司甲醇采购公告山西阿房有限公司甲醇采购公告山西阿房有限公司甲醇采购公告</a></li>
+              <li><span>10-11</span><a href="#">山西阿房有限公司甲醇采购公告山西阿房有限公司甲醇采购公告山西阿房有限公司甲醇采购公告</a></li>
+              <li><span>10-11</span><a href="#">山西阿房有限公司甲醇采购公告山西阿房有限公司甲醇采购公告山西阿房有限公司甲醇采购公告</a></li>
+              <li><span>10-11</span><a href="#">山西阿房有限公司甲醇采购公告山西阿房有限公司甲醇采购公告山西阿房有限公司甲醇采购公告</a></li>
+              <li><span>10-11</span><a href="#">山西阿房有限公司甲醇采购公告山西阿房有限公司甲醇采购公告山西阿房有限公司甲醇采购公告</a></li>
+              <li><span>10-11</span><a href="#">山西阿房有限公司甲醇采购公告山西阿房有限公司甲醇采购公告山西阿房有限公司甲醇采购公告</a></li>
+              <li><span>10-11</span><a href="#">山西阿房有限公司甲醇采购公告山西阿房有限公司甲醇采购公告山西阿房有限公司甲醇采购公告</a></li>
+              <li><span>10-11</span><a href="#">山西阿房有限公司甲醇采购公告山西阿房有限公司甲醇采购公告山西阿房有限公司甲醇采购公告</a></li>
+              <li><span>10-11</span><a href="#">山西阿房有限公司甲醇采购公告山西阿房有限公司甲醇采购公告山西阿房有限公司甲醇采购公告</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!---采购信息 结束----> 
+  <!---首页-行 开始---->
+  <div class="mhg-line wrap clearfix"> 
+    
+    <!--挂牌列表 开始-->
+    <div class="mhg-gplb">
+      <div class="mhg-tit">挂牌列表<a href="#">更多</a></div>
+      <div class="gplb-con">
+        <div class="gp-gg clearfix">
+          <div class="tit">推荐挂牌</div>
+          <ul>
+            <li><a href="#"><img src="img/mhg-gplb-gg01.jpg" width="110" height="32" /></a></li>
+            <li><a href="#"><img src="img/mhg-gplb-gg02.jpg" width="110" height="32" /></a></li>
+            <li><a href="#"><img src="img/mhg-gplb-gg01.jpg" width="110" height="32" /></a></li>
+            <li><a href="#"><img src="img/mhg-gplb-gg02.jpg" width="110" height="32" /></a></li>
+            <li><a href="#"><img src="img/mhg-gplb-gg01.jpg" width="110" height="32" /></a></li>
+          </ul>
+        </div>
+        <div class="mhg-scroll-con">
+          <div class="scroll-tab clearfix" id="scroll-tab2">
+            <h2 class="over">全部</h2>
+            <h2 class="out">甲醇</h2>
+          </div>
+          <div class="scroll-con clearfix" id="scroll-con2"> <em class="clearfix">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <th scope="col" width="18%">采购单位</th>
+                <th scope="col" width="10%">产品名称</th>
+                <th scope="col" width="12%">交货地</th>
+                <th scope="col" width="12%">品质</th>
+                <th scope="col" width="12%">数量</th>
+                <th scope="col" width="12%">价格</th>
+                <th scope="col" width="12%">有效期</th>
+                <th scope="col" width="12%">订购</th>
+              </tr>
+            </table>
+            <div class="mhg_gy_cont" id="mhg_gy_cont5">
+              <div id="mhg_gy_cont6">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td width="18%">溪山甲醇交易有限公司</td>
+                    <td width="10%">甲醇</td>
+                    <td width="12%">内蒙古</td>
+                    <td width="12%">国标、优等品</td>
+                    <td width="12%">5000吨</td>
+                    <td width="12%"><span style="color:#ff6600;">¥300</span></td>
+                    <td width="12%">10-23至11-23</td>
+                    <td width="12%"><a href="#" class="cy-btn">参与</a></td>
+                  </tr>
+                  <tr>
+                    <td width="18%">溪山甲醇交易有限公司</td>
+                    <td width="10%">甲醇</td>
+                    <td width="12%">内蒙古</td>
+                    <td width="12%">国标、优等品</td>
+                    <td width="12%">5000吨</td>
+                    <td width="12%"><span style="color:#ff6600;">¥300</span></td>
+                    <td width="12%">10-23至11-23</td>
+                    <td width="12%"><a href="#" class="cy-btn">参与</a></td>
+                  </tr>
+                  <tr>
+                    <td width="18%">溪山甲醇交易有限公司</td>
+                    <td width="10%">甲醇</td>
+                    <td width="12%">内蒙古</td>
+                    <td width="12%">国标、优等品</td>
+                    <td width="12%">5000吨</td>
+                    <td width="12%"><span style="color:#ff6600;">¥300</span></td>
+                    <td width="12%">10-23至11-23</td>
+                    <td width="12%"><a href="#" class="cy-btn">参与</a></td>
+                  </tr>
+                  <tr>
+                    <td width="18%">溪山甲醇交易有限公司</td>
+                    <td width="10%">甲醇</td>
+                    <td width="12%">内蒙古</td>
+                    <td width="12%">国标、优等品</td>
+                    <td width="12%">5000吨</td>
+                    <td width="12%"><span style="color:#ff6600;">¥300</span></td>
+                    <td width="12%">10-23至11-23</td>
+                    <td width="12%"><a href="#" class="cy-btn">参与</a></td>
+                  </tr>
+                  <tr>
+                    <td width="18%">溪山甲醇交易有限公司</td>
+                    <td width="10%">甲醇</td>
+                    <td width="12%">内蒙古</td>
+                    <td width="12%">国标、优等品</td>
+                    <td width="12%">5000吨</td>
+                    <td width="12%"><span style="color:#ff6600;">¥300</span></td>
+                    <td width="12%">10-23至11-23</td>
+                    <td width="12%"><a href="#" class="cy-btn">参与</a></td>
+                  </tr>
+                  <tr>
+                    <td width="18%">溪山甲醇交易有限公司</td>
+                    <td width="10%">甲醇</td>
+                    <td width="12%">内蒙古</td>
+                    <td width="12%">国标、优等品</td>
+                    <td width="12%">5000吨</td>
+                    <td width="12%"><span style="color:#ff6600;">¥300</span></td>
+                    <td width="12%">10-23至11-23</td>
+                    <td width="12%"><a href="#" class="cy-btn">参与</a></td>
+                  </tr>
+                  <tr>
+                    <td width="18%">溪山甲醇交易有限公司</td>
+                    <td width="10%">甲醇</td>
+                    <td width="12%">内蒙古</td>
+                    <td width="12%">国标、优等品</td>
+                    <td width="12%">5000吨</td>
+                    <td width="12%"><span style="color:#ff6600;">¥300</span></td>
+                    <td width="12%">10-23至11-23</td>
+                    <td width="12%"><a href="#" class="cy-btn">参与</a></td>
+                  </tr>
+                  <tr>
+                    <td width="18%">溪山甲醇交易有限公司</td>
+                    <td width="10%">甲醇</td>
+                    <td width="12%">内蒙古</td>
+                    <td width="12%">国标、优等品</td>
+                    <td width="12%">5000吨</td>
+                    <td width="12%"><span style="color:#ff6600;">¥300</span></td>
+                    <td width="12%">10-23至11-23</td>
+                    <td width="12%"><a href="#" class="cy-btn">参与</a></td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <script type="text/javascript">
+			  
+			  function scoll(scrollElem){
+				  var stopscroll3 = false;
+				  var marqueesHeight = scrollElem.style.height;
+				  scrollElem.onmouseover = new Function('stopscroll3 = true');
+				  scrollElem.onmouseout = new Function('stopscroll3 = false');
+				  var preTop = 0;
+				  var currentTop = 0;
+				  var stoptime = 0;
+				  var leftElem = document.getElementById("mhg_gy_cont6"); 
+				  scrollElem.appendChild(leftElem.cloneNode(true));
+				   
+				  function init_srolltext3(){
+					  scrollElem.scrollTop = 0;
+					  setInterval(scrollUp, 50);//的面的这个参数25, 是确定滚动速度的, 数值越小, 速度越快
+				  }
+				  function scrollUp(){
+					  if(stopscroll3) return;
+					  currentTop += 2; //设为1, 可以实现间歇式的滚动; 设为2, 则是连续滚动
+					  if(currentTop == 84) {
+						 stoptime += 1;
+						 currentTop -= 1;
+						 if(stoptime == 210) {
+						  currentTop = 0;
+						  stoptime = 0;
+						 }
+					  }else{
+						 preTop = scrollElem.scrollTop;
+						 scrollElem.scrollTop += 1;
+						 if(preTop == scrollElem.scrollTop){
+						  scrollElem.scrollTop = 0;
+						  scrollElem.scrollTop += 1;
+						 }
+					  }
+				  }
+				  init_srolltext3();
+			  }
+			  var scrollElem3 = document.getElementById("mhg_gy_cont5");
+			  scoll(scrollElem3);
+			  
+			  </script> 
+            </em> <em class="clearfix">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <th scope="col" width="18%">采购单位</th>
+                <th scope="col" width="10%">产品名称</th>
+                <th scope="col" width="12%">交货地</th>
+                <th scope="col" width="12%">品质</th>
+                <th scope="col" width="12%">数量</th>
+                <th scope="col" width="12%">价格</th>
+                <th scope="col" width="12%">有效期</th>
+                <th scope="col" width="12%">订购</th>
+              </tr>
+            </table>
+            <div class="mhg_gy_cont" id="mhg_gy_cont7">
+              <div id="mhg_gy_cont8">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td width="18%">溪山甲醇交易有限公司</td>
+                    <td width="10%">甲醇</td>
+                    <td width="12%">内蒙古</td>
+                    <td width="12%">国标、优等品</td>
+                    <td width="12%">5000吨</td>
+                    <td width="12%"><span style="color:#ff6600;">¥300</span></td>
+                    <td width="12%">10-23至11-23</td>
+                    <td width="12%"><a href="#" class="cy-btn">参与</a></td>
+                  </tr>
+                  <tr>
+                    <td width="18%">溪山甲醇交易有限公司</td>
+                    <td width="10%">甲醇</td>
+                    <td width="12%">内蒙古</td>
+                    <td width="12%">国标、优等品</td>
+                    <td width="12%">5000吨</td>
+                    <td width="12%"><span style="color:#ff6600;">¥300</span></td>
+                    <td width="12%">10-23至11-23</td>
+                    <td width="12%"><a href="#" class="cy-btn">参与</a></td>
+                  </tr>
+                  <tr>
+                    <td width="18%">溪山甲醇交易有限公司</td>
+                    <td width="10%">甲醇</td>
+                    <td width="12%">内蒙古</td>
+                    <td width="12%">国标、优等品</td>
+                    <td width="12%">5000吨</td>
+                    <td width="12%"><span style="color:#ff6600;">¥300</span></td>
+                    <td width="12%">10-23至11-23</td>
+                    <td width="12%"><a href="#" class="cy-btn">参与</a></td>
+                  </tr>
+                  <tr>
+                    <td width="18%">溪山甲醇交易有限公司</td>
+                    <td width="10%">甲醇</td>
+                    <td width="12%">内蒙古</td>
+                    <td width="12%">国标、优等品</td>
+                    <td width="12%">5000吨</td>
+                    <td width="12%"><span style="color:#ff6600;">¥300</span></td>
+                    <td width="12%">10-23至11-23</td>
+                    <td width="12%"><a href="#" class="cy-btn">参与</a></td>
+                  </tr>
+                  <tr>
+                    <td width="18%">溪山甲醇交易有限公司</td>
+                    <td width="10%">甲醇</td>
+                    <td width="12%">内蒙古</td>
+                    <td width="12%">国标、优等品</td>
+                    <td width="12%">5000吨</td>
+                    <td width="12%"><span style="color:#ff6600;">¥300</span></td>
+                    <td width="12%">10-23至11-23</td>
+                    <td width="12%"><a href="#" class="cy-btn">参与</a></td>
+                  </tr>
+                  <tr>
+                    <td width="18%">溪山甲醇交易有限公司</td>
+                    <td width="10%">甲醇</td>
+                    <td width="12%">内蒙古</td>
+                    <td width="12%">国标、优等品</td>
+                    <td width="12%">5000吨</td>
+                    <td width="12%"><span style="color:#ff6600;">¥300</span></td>
+                    <td width="12%">10-23至11-23</td>
+                    <td width="12%"><a href="#" class="cy-btn">参与</a></td>
+                  </tr>
+                  <tr>
+                    <td width="18%">溪山甲醇交易有限公司</td>
+                    <td width="10%">甲醇</td>
+                    <td width="12%">内蒙古</td>
+                    <td width="12%">国标、优等品</td>
+                    <td width="12%">5000吨</td>
+                    <td width="12%"><span style="color:#ff6600;">¥300</span></td>
+                    <td width="12%">10-23至11-23</td>
+                    <td width="12%"><a href="#" class="cy-btn">参与</a></td>
+                  </tr>
+                  <tr>
+                    <td width="18%">溪山甲醇交易有限公司</td>
+                    <td width="10%">甲醇</td>
+                    <td width="12%">内蒙古</td>
+                    <td width="12%">国标、优等品</td>
+                    <td width="12%">5000吨</td>
+                    <td width="12%"><span style="color:#ff6600;">¥300</span></td>
+                    <td width="12%">10-23至11-23</td>
+                    <td width="12%"><a href="#" class="cy-btn">参与</a></td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <script type="text/javascript">
+			  
+			  function scoll(scrollElem){
+				  var stopscroll4 = false;
+				  var marqueesHeight = scrollElem.style.height;
+				  scrollElem.onmouseover = new Function('stopscroll4 = true');
+				  scrollElem.onmouseout = new Function('stopscroll4 = false');
+				  var preTop = 0;
+				  var currentTop = 0;
+				  var stoptime = 0;
+				  var leftElem = document.getElementById("mhg_gy_cont8"); 
+				  scrollElem.appendChild(leftElem.cloneNode(true));
+				   
+				  function init_srolltext4(){
+					  scrollElem.scrollTop = 0;
+					  setInterval(scrollUp, 50);//的面的这个参数25, 是确定滚动速度的, 数值越小, 速度越快
+				  }
+				  function scrollUp(){
+					  if(stopscroll4) return;
+					  currentTop += 2; //设为1, 可以实现间歇式的滚动; 设为2, 则是连续滚动
+					  if(currentTop == 84) {
+						 stoptime += 1;
+						 currentTop -= 1;
+						 if(stoptime == 210) {
+						  currentTop = 0;
+						  stoptime = 0;
+						 }
+					  }else{
+						 preTop = scrollElem.scrollTop;
+						 scrollElem.scrollTop += 1;
+						 if(preTop == scrollElem.scrollTop){
+						  scrollElem.scrollTop = 0;
+						  scrollElem.scrollTop += 1;
+						 }
+					  }
+				  }
+				  init_srolltext4();
+			  }
+			  var scrollElem4 = document.getElementById("mhg_gy_cont7");
+			  scoll(scrollElem4);
+			  
+			  </script> 
+            </em> </div>
+          <script>var Tagsscroll2=document.getElementById('scroll-tab2').getElementsByTagName('h2');var TagsCntscroll2=document.getElementById('scroll-con2').getElementsByTagName('em');var lenscroll2=Tagsscroll2.length; var flagscroll2=0;for(i=0;i<lenscroll2;i++){Tagsscroll2[i].value = i;Tagsscroll2[i].onmouseover=function(){changeNavscroll2(this.value)};TagsCntscroll2[i].className='undis';}Tagsscroll2[flagscroll2].className='over';TagsCntscroll2[flagscroll2].className='dis';function changeNavscroll2(v){Tagsscroll2[flagscroll2].className='out';TagsCntscroll2[flagscroll2].className='undis';flagscroll2=v;Tagsscroll2[v].className='over';TagsCntscroll2[v].className='dis';}
+      </script> 
+        </div>
+      </div>
+    </div>
+    <!--挂牌列表结束--> 
+    
+    <!--成交订单 开始-->
+    <div class="mhg-cjdd">
+      <div class="mhg-tit">成交订单</div>
+      <div class="cjdd-con">
+        <div class="bt-list clearfix"><span style="width:90px">品名/规格</span><span style="width:50px">成交量</span><span style="width:45px">时间</span></div>
+        <div class="tl-list">
+          <ul>
+            <li> <span style="width:90px"><a href="#">甲醇供应测试1100000</a></span><span style="width:50px">60吨</span><span style="width:45px">10-26</span> </li>
+            <li> <span style="width:90px"><a href="#">甲醇供应测试1100000</a></span><span style="width:50px">60吨</span><span style="width:45px">10-26</span> </li>
+            <li> <span style="width:90px"><a href="#">甲醇供应测试1100000</a></span><span style="width:50px">60吨</span><span style="width:45px">10-26</span> </li>
+            <li> <span style="width:90px"><a href="#">甲醇供应测试1100000</a></span><span style="width:50px">60吨</span><span style="width:45px">10-26</span> </li>
+            <li> <span style="width:90px"><a href="#">甲醇供应测试1100000</a></span><span style="width:50px">60吨</span><span style="width:45px">10-26</span> </li>
+            <li> <span style="width:90px"><a href="#">甲醇供应测试1100000</a></span><span style="width:50px">60吨</span><span style="width:45px">10-26</span> </li>
+            <li> <span style="width:90px"><a href="#">甲醇供应测试1100000</a></span><span style="width:50px">60吨</span><span style="width:45px">10-26</span> </li>
+            <li> <span style="width:90px"><a href="#">甲醇供应测试1100000</a></span><span style="width:50px">60吨</span><span style="width:45px">10-26</span> </li>
+            <li> <span style="width:90px"><a href="#">甲醇供应测试1100000</a></span><span style="width:50px">60吨</span><span style="width:45px">10-26</span> </li>
+          </ul>
+        </div>
+        <script type="text/javascript" src="js/scroll.js"></script> 
+        <script type="text/javascript">
+			  $(document).ready(function(){
+				  $("div.tl-list").myScroll({
+					  speed:50, //数值越大，速度越慢
+					  rowHeight:45 //li的高度
+				  });
+			  })
+			</script> 
+      </div>
+    </div>
+    <!--成交订单--> 
+    
+  </div>
+  <!---首页-行 结束----> 
+  <!---广告 开始---->
+  <div class="wrap clearfix">
+    <div class="jchg-guanggao">
+      <div class="l1 clearfix"><a href="#"><img src="img/gg-l1-01.jpg" width="1200" height="90" /></a></div>
+    </div>
+  </div>
+  <!---广告 结束----> 
+  
+  <!---热门企业 开始---->
+  <div class="mhg-line wrap clearfix">
+    <div class="mhg-tit">热门企业<a href="#">更多</a></div>
+    <div class="mhg-rmqy clearfix">
+      <div class="l-tit">
+        <div class="con">
+          <h1>煤化工企业商铺</h1>
+          <h2>COAL  CHEMICAL ENTERPRISES</h2>
+        </div>
+      </div>
+      <div class="c-list">
+        <ul class="clearfix">
+          <li>
+            <div class="img"><a href="#"><img src="img/mhg-rmqy-list-img.jpg" width="172" height="65" /></a></div>
+            <div class="con clearfix">
+              <h1>溪山甲醇交易有限公司</h1>
+              <p>主营产品：甲醇</p>
+              <a href="#" class="jd-btn">进店</a></div>
+          </li>
+          <li>
+            <div class="img"><a href="#"><img src="img/mhg-rmqy-list-img.jpg" width="172" height="65" /></a></div>
+            <div class="con clearfix">
+              <h1>溪山甲醇交易有限公司</h1>
+              <p>主营产品：甲醇</p>
+              <a href="#" class="jd-btn">进店</a></div>
+          </li>
+          <li>
+            <div class="img"><a href="#"><img src="img/mhg-rmqy-list-img.jpg" width="172" height="65" /></a></div>
+            <div class="con clearfix">
+              <h1>溪山甲醇交易有限公司</h1>
+              <p>主营产品：甲醇</p>
+              <a href="#" class="jd-btn">进店</a></div>
+          </li>
+          <li>
+            <div class="img"><a href="#"><img src="img/mhg-rmqy-list-img.jpg" width="172" height="65" /></a></div>
+            <div class="con clearfix">
+              <h1>溪山甲醇交易有限公司</h1>
+              <p>主营产品：甲醇</p>
+              <a href="#" class="jd-btn">进店</a></div>
+          </li>
+          <li>
+            <div class="img"><a href="#"><img src="img/mhg-rmqy-list-img.jpg" width="172" height="65" /></a></div>
+            <div class="con clearfix">
+              <h1>溪山甲醇交易有限公司</h1>
+              <p>主营产品：甲醇</p>
+              <a href="#" class="jd-btn">进店</a></div>
+          </li>
+          <li>
+            <div class="img"><a href="#"><img src="img/mhg-rmqy-list-img.jpg" width="172" height="65" /></a></div>
+            <div class="con clearfix">
+              <h1>溪山甲醇交易有限公司</h1>
+              <p>主营产品：甲醇</p>
+              <a href="#" class="jd-btn">进店</a></div>
+          </li>
+          <li>
+            <div class="img"><a href="#"><img src="img/mhg-rmqy-list-img.jpg" width="172" height="65" /></a></div>
+            <div class="con clearfix">
+              <h1>溪山甲醇交易有限公司</h1>
+              <p>主营产品：甲醇</p>
+              <a href="#" class="jd-btn">进店</a></div>
+          </li>
+          <li>
+            <div class="img"><a href="#"><img src="img/mhg-rmqy-list-img.jpg" width="172" height="65" /></a></div>
+            <div class="con clearfix">
+              <h1>溪山甲醇交易有限公司</h1>
+              <p>主营产品：甲醇</p>
+              <a href="#" class="jd-btn">进店</a></div>
+          </li>
+        </ul>
+      </div>
+      <div class="r-img"><a href="#"><img src="img/mhg-rmqy-img.jpg" width="190" height="300" /></a></div>
+    </div>
+  </div>
+  <!---热门企业 结束----> 
+  <!---资讯动态 开始---->
+  <div class="mhg-line wrap clearfix">
+    <div class="mhg-tit">资讯动态</div>
+    <div class="mhg-zxdt clearfix">
+      <div class="zixun_cont"> 
+        <!-- 焦点图代码 开始 -->
+        <div id="fsD1" class="focus"  >
+          <div id="D1pic1" class="fPic">
+            <div class="fcon" > <a target="_blank" href="/info/659.jspx"><img src="/uploads/1/image/public/201809/20180925100002_of2kh11a7p.png" style="opacity: 1; "></a> <span class="shadow"><a target="_blank" href="#">hhhh</a></span> </div>
+            <div class="fcon" > <a target="_blank" href="/info/658.jspx"><img src="/uploads/1/image/public/201809/20180925100016_0tbn7kqqyy.jpg" style="opacity: 1; "></a> <span class="shadow"><a target="_blank" href="#">rrrrr</a></span> </div>
+            <div class="fcon" > <a target="_blank" href="/info/657.jspx"><img src="/uploads/1/image/public/201809/20180925100031_b3yehc82ca.jpg" style="opacity: 1; "></a> <span class="shadow"><a target="_blank" href="#">fdsfsdf</a></span> </div>
+          </div>
+          <div class="fbg">
+            <div class="D1fBt" id="D1fBt"> <a href="javascript:void(0)" hidefocus="true" target="_self" class="current"><i>1</i></a> <a href="javascript:void(0)" hidefocus="true" target="_self" class=""><i>2</i></a> <a href="javascript:void(0)" hidefocus="true" target="_self" class=""><i>3</i></a> </div>
+          </div>
+          <span class="prev"></span> <span class="next"></span> </div>
+        <script type="text/javascript">
+            Qfast.add('widgets', { path: "/template/1/bluewise/_files/terminator2.2.min.js", type: "js", requires: ['fx'] });  
+            Qfast(false, 'widgets', function () {
+                K.tabs({
+                    id: 'fsD1',   //焦点图包裹id  
+                    conId: "D1pic1",  //** 大图域包裹id  
+                    tabId:"D1fBt",  
+                    tabTn:"a",
+                    conCn: '.fcon', //** 大图域配置class       
+                    auto: 1,   //自动播放 1或0
+                    effect: 'fade',   //效果配置
+                    eType: 'click', //** 鼠标事件
+                    pageBt:true,//是否有按钮切换页码
+                    bns: ['.prev', '.next'],//** 前后按钮配置class                          
+                    interval: 3000  //** 停顿时间  
+                }) 
+            })  
+        </script> 
+        <!-- 轮播图 结束 --> 
+        <!--资讯 -->
+        <div class="news">
+          <div class="news_tit"><span>新闻资讯</span><a href="/node/36.jspx">更多</a></div>
+          <div class="news_tit2"><a href="/info/653.jspx" target=blank>《能源发展“十三五”规划》正式发布</a></div>
+          <div class="news_intro">
+            <p>国家发展改革委、国家能源局17日发布的《能源发展“...<a href="/info/653.jspx" class="news_more">[详细]</a></p>
+          </div>
+          <div class="news_cont">
+            <div class="news_cont_list">
+              <ul>
+                <li><a href="/info/652.jspx" target=blank>干散货运价指数上升 受海岬型船舶运费走高带动</a><span>01-19</span></li>
+                <li><a href="/info/651.jspx" target=blank>黑色系期货剧烈震荡，焦煤现货持稳运行</a><span>01-19</span></li>
+                <li><a href="/info/650.jspx" target=blank>供需弱平衡，节前动力煤价格无下滑基础</a><span>01-19</span></li>
+                <li><a href="/info/649.jspx" target=blank>巴彦淖尔市去年1-12月份全社会用电量完成11.11亿千瓦时</a><span>01-19</span></li>
+                <li><a href="/info/640.jspx" target=blank>澳预测17年煤炭均价同比大涨</a><span>01-13</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="news">
+          <div class="news_tit"><span>行业动态</span><a href="/node/14.jspx">更多</a></div>
+          <div class="news_tit2"><a href="/info/656.jspx" target=blank>甘其毛都口岸查获一批掺杂煤炭</a></div>
+          <div class="news_intro">
+            <p>？ ？ 进口煤炭中掺了大块矸石，这是继2015年退运夹...<a href="/info/656.jspx" class="news_more">[详细]</a></p>
+          </div>
+          <div class="news_cont">
+            <div class="news_cont_list">
+              <ul>
+                <li><a href="/info/655.jspx" target=blank>铁总借1500辆神华货车 破电煤运输危机</a><span>01-19</span></li>
+                <li><a href="/info/648.jspx" target=blank>电力行业去产能序幕拉开 85个煤电项目停建或缓建</a><span>01-19</span></li>
+                <li><a href="/info/647.jspx" target=blank>山西焦煤汾西矿业与煤炭规划院签署战略合作协议</a><span>01-19</span></li>
+                <li><a href="/info/646.jspx" target=blank>化解392万吨钢铁过剩产能</a><span>01-19</span></li>
+                <li><a href="/info/645.jspx" target=blank>钢煤去产能加减法深度推进</a><span>01-19</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!---资讯动态 结束----> 
+</div>
+<!---首页正文 结束----> 
+
+<!--jchg-footer 开始-->
+<div class="jchg-footer">
+  <div class="wrap clearfix">
+    <div class="logo-b"><a href="#"><img src="img/jchg-logo-b.png" width="280" height="90" /></a></div>
+    <div class="list-group">
+      <div class="list">
+        <h1 class="icon01"><a href="#">我要买</a></h1>
+        <ul>
+          <li><a href="#">我是买家，如何采购</a></li>
+          <li><a href="#">委托采购</a></li>
+        </ul>
+      </div>
+      <div class="list">
+        <h1 class="icon02"><a href="#">我要卖</a></h1>
+        <ul>
+          <li><a href="#">我是卖家，如何销售</a></li>
+          <li><a href="#">委托销售</a></li>
+        </ul>
+      </div>
+      <div class="list">
+        <h1 class="icon03"><a href="#">交易指南</a></h1>
+        <ul>
+          <li><a href="#">电子合同</a></li>
+          <li><a href="#">交易安全</a></li>
+          <li><a href="#">保价标准</a></li>
+          <li><a href="#">用户注册协议</a></li>
+          <li><a href="#">会员等级及服务范围</a></li>
+          <li><a href="#">物流流程</a></li>
+        </ul>
+      </div>
+      <div class="list">
+        <h1 class="icon04"><a href="#">常见问题</a></h1>
+        <ul>
+          <li><a href="#">注册/登录流程</a></li>
+          <li><a href="#">如何成为认证会员</a></li>
+          <li><a href="#">如何成为交易商会员</a></li>
+          <li><a href="#">入市流程及填报资料</a></li>
+          <li><a href="#">忘记密码</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-m"> <a href="#">关于我们</a>&nbsp;|&nbsp; <a href="#">联系我们</a>&nbsp;|&nbsp;<a href="#">友情链接</a>&nbsp;|&nbsp;<a href="#">法律声明</a><br />
+      <a href="">中国（太原）煤炭交易中心</a>&nbsp;&nbsp;&nbsp;&nbsp;版权所有&nbsp;&nbsp;&nbsp;&nbsp;晋ICP备11000000号-4 &nbsp;&nbsp;&nbsp;&nbsp; </div>
+  </div>
+</div>
+<!--jchg-footer 结束-->
+
+</body>
 </html>

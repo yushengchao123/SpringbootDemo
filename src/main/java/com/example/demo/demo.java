@@ -15,7 +15,7 @@ public class demo {
 	@RequestMapping("/hello")
     @ResponseBody
     String home() {
-        return "index2.html";
+        return "index.html";
     }
 	public static void main(String[] args) {
 		SpringApplication.run(demo.class, args);
